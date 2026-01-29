@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guillermo Gomez Alvarez | Portafolio Artístico</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#d41132",
+              "background-light": "#f8f6f6",
+              "background-dark": "#0a0506",
+              "accent-gold": "#b08d57",
+              "surface-dark": "#1a0c0e",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"],
+              "serif": ["Playfair Display", "serif"]
+            },
+          },
+        },
+      }
+    </script>
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          @apply bg-background-dark text-white font-display;
+          scroll-behavior: smooth;
+        }
+      }
+      .wood-texture {
+        background-image: linear-gradient(rgba(18, 8, 10, 0.95), rgba(18, 8, 10, 0.95)), url('https://images.unsplash.com/photo-1549289621-0cbc508f3cce?auto=format&fit=crop&q=80&w=2000');
+        background-size: cover;
+      }
+      .cinematic-overlay {
+        background: linear-gradient(to right, rgba(10, 5, 6, 0.95) 0%, rgba(10, 5, 6, 0.7) 40%, rgba(10, 5, 6, 0.2) 100%);
+      }
+      .hide-scrollbar::-webkit-scrollbar { display: none; }
+      .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
